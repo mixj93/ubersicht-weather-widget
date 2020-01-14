@@ -2,6 +2,9 @@
 
 Nice and powerful weather widget for [Übersicht](http://tracesof.net/uebersicht/).
 
+[阅读中文文档](https://github.com/mixj93/uebersicht-weather-widget/blob/master/README-zh.md)
+
+
 ## Screenshot
 
 ![Screenshot](./screenshot.jpg)
@@ -14,17 +17,23 @@ Just downloading from [Übersicht's website](http://tracesof.net/uebersicht/).
 
 ### Download Widget
 
-Download the [widget source file](https://raw.githubusercontent.com/mixj93/uebersicht-weather-widget/master/uebersicht-weather-widget.jsx) and put into Übersicht widgets folder.
+Download the widget zip file check out [the latest release](https://github.com/mixj93/uebersicht-weather-widget/releases/latest), unzip the file and put `weather.jsx` into Übersicht widgets folder.
 
 ### Configure Widget
 
-You can edit config in source file. To use this widget, you should at least get an Dark Sky Key [here](https://darksky.net/dev/account). [Dark Sky](https://darksky.net/) is a really good weather service.
+You can edit config in source file. To use this widget, you should at least get an Dark Sky Key [here](https://darksky.net/dev/account). [Dark Sky](https://darksky.net/) is a really good weather service and allows up to 1,000 free calls per day.
 
 ```js
 // Dark Sky Key https://darksky.net/dev/account
 const KEY = 'your_dark_sky_key'
-const LANG = 'zh' // language: en for English, zh for Chinese
+// language: en for English, zh for Chinese
+const LANG = 'zh'
 // weather data units
+// auto: automatically select units based on geographic location
+// ca: same as si, except that windSpeed is in kilometers per hour
+// uk2: same as si, except that nearestStormDistance and visibility are in miles and windSpeed is in miles per hour
+// us: Imperial units (the default)
+// si: SI units
 const UNITS = 'auto'
 // theme: light or dark
 const theme = 'dark'
