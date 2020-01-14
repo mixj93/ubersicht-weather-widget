@@ -14,6 +14,8 @@ Just downloading from [Übersicht's website](http://tracesof.net/uebersicht/).
 
 ### Download Widget
 
+Download the [widget source file](https://raw.githubusercontent.com/mixj93/uebersicht-weather-widget/master/uebersicht-weather-widget.jsx) and put into Übersicht widgets folder.
+
 ### Configure Widget
 
 You can edit config in source file. To use this widget, you should at least get an Dark Sky Key [here](https://darksky.net/dev/account). [Dark Sky](https://darksky.net/) is a really good weather service.
