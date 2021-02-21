@@ -1,9 +1,12 @@
 # Übersicht Weather Widget
 
-Nice and powerful weather widget for [Übersicht](http://tracesof.net/uebersicht/).
+> Nice and powerful weather widget for [Übersicht](http://tracesof.net/uebersicht/).
+>
+> [阅读中文文档](https://github.com/mixj93/uebersicht-weather-widget/blob/master/README-zh.md)
 
-[阅读中文文档](https://github.com/mixj93/uebersicht-weather-widget/blob/master/README-zh.md)
+## 🎉🎉🎉 Version 2.0! Upgrade from Dark Sky to Open Weather
 
+[Because Dark Sky no longer accepting new signups](https://blog.darksky.net/). Now this widget use [Open Weather](https://openweathermap.org/), please rest assured to use.
 
 ## Screenshot
 
@@ -17,24 +20,19 @@ Just downloading from [Übersicht's website](http://tracesof.net/uebersicht/).
 
 ### Download Widget
 
-Download the widget zip file check out [the latest release](https://github.com/mixj93/uebersicht-weather-widget/releases/latest), unzip the file and put `weather.jsx` into Übersicht widgets folder.
+Download the widget zip file check out [the latest release](https://github.com/mixj93/uebersicht-weather-widget/releases/latest), unzip the file and put `Weather.jsx` into Übersicht widgets folder.
 
 ### Configure Widget
 
-You can edit config in source file. To use this widget, you should at least get an Dark Sky Key [here](https://darksky.net/dev/account). [Dark Sky](https://darksky.net/) is a really good weather service and allows up to 1,000 free calls per day.
+You can edit config in source file. To use this widget, you should at least get an Open Weather API Key [here](https://home.openweathermap.org/api_keys). [Open Weather](https://openweathermap.org/) is a really good weather service and allows up to 60 free calls/minute or 1,000,000 free calls/month.
 
 ```js
-// Dark Sky Key https://darksky.net/dev/account
-const KEY = 'your_dark_sky_key'
+// Open Weather API Key https://openweathermap.org/api
+const KEY = 'OPEN_WEATHER_API_KEY'
 // language: en for English, zh for Chinese
 const LANG = 'zh'
-// weather data units
-// auto: automatically select units based on geographic location
-// ca: same as si, except that windSpeed is in kilometers per hour
-// uk2: same as si, except that nearestStormDistance and visibility are in miles and windSpeed is in miles per hour
-// us: Imperial units (the default)
-// si: SI units
-const UNITS = 'auto'
+// standard(default), metric and imperial units are available.
+const UNITS = 'metric'
 // theme: light or dark
 const theme = 'dark'
 // background transparency. value from 0 to 1
@@ -52,10 +50,10 @@ const POSITION = {
 
 Weather widget need to use location services. Follow these steps to enable location services:
 
-- Go to *System Preferences*
-- Click the *Security & Privacy*
-- Click the *Privacy* tab
-- Select *Location Services*
+- Go to _System Preferences_
+- Click the _Security & Privacy_
+- Click the _Privacy_ tab
+- Select _Location Services_
 - Add Übersicht App
 
 More information about [Location Services](https://support.apple.com/en-us/HT204690).
