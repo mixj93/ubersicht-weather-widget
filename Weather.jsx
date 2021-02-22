@@ -104,7 +104,16 @@ const ICON = {
 export const command = (dispatch) => {
   geolocation.getCurrentPosition(
     (geo) => {
-      const city = geo.address.city
+      console.log('🚀 ~ command ~ geo', geo)
+      const { country, state, city } = geo.address
+      let address
+      if (city !== '(null)') {
+        address = city
+      } else if (state !== '(null)') {
+        address = state
+      } else {
+        address = country
+      }
       const lat = geo.position.coords.latitude
       const lon = geo.position.coords.longitude
       const proxy = 'http://127.0.0.1:41417'
@@ -121,7 +130,7 @@ export const command = (dispatch) => {
           return dispatch({
             type: 'FETCH_SUCCEDED',
             data: data,
-            city: city
+            city: address
           })
         })
     },

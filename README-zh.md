@@ -20,7 +20,7 @@
 
 ### 下载插件
 
-下载[最新版本](https://github.com/mixj93/uebersicht-weather-widget/releases/latest)的插件压缩包，解压缩下载的文件并把 `weather.jsx` 放到 Übersicht 的插件文件夹中。
+查看[最新版本](https://github.com/mixj93/uebersicht-weather-widget/releases/latest)，下载插件文件 `weather.jsx`，并放到 Übersicht 的插件文件夹中。
 
 ### 配置插件
 

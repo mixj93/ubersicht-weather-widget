@@ -20,7 +20,7 @@ Just downloading from [Übersicht's website](http://tracesof.net/uebersicht/).
 
 ### Download Widget
 
-Download the widget zip file check out [the latest release](https://github.com/mixj93/uebersicht-weather-widget/releases/latest), unzip the file and put `Weather.jsx` into Übersicht widgets folder.
+Check out [the latest release](https://github.com/mixj93/uebersicht-weather-widget/releases/latest), download the widget file `Weather.jsx` and put into Übersicht widgets folder.
 
 ### Configure Widget
 
